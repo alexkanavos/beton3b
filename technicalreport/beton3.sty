@@ -1,0 +1,57 @@
+\ProvidesPackage{beton3}
+
+\usepackage[LGR,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,greek]{babel}
+\usepackage{indentfirst}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{kerkis}
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage[labelfont=bf]{caption}
+\usepackage[labelfont=bf]{subcaption}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage[backend=biber,sorting=nyt]{biblatex}
+\usepackage{setspace}
+\usepackage{titling}
+\usepackage[bookmarks=false]{hyperref}
+\usepackage{float}
+\usepackage{csquotes}
+\usepackage{titlesec}
+\usepackage{listings}
+
+\newcommand{\en}{\selectlanguage{english}}
+\newcommand{\el}{\selectlanguage{greek}}
+
+\graphicspath{{figures/}}
+\setlength{\textwidth}{150mm}
+
+%hyperlinks and colors
+\definecolor{myblue}{HTML}{003399}
+\definecolor{mygreen}{HTML}{1E8449}
+\definecolor{myred}{HTML}{DD0000}
+
+\hypersetup
+{
+	colorlinks=true,
+	allcolors={myblue}
+}
+
+%headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[LE]{\nouppercase{\leftmark}}
+%\fancyhead[RO]{\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[RE,LO]{\textlatin{Alexandros Kanavos}}
+\fancyhead[RE,LO]{\textlatin{Assignment} 2/2}
+\fancyhead[LE,RO]{\textlatin{Part} \thechapter}
+
+\titleformat{\chapter}{\bfseries\huge}{\thechapter.}{15pt}{\huge}
+
+%absolute values
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
