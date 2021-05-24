@@ -1,3 +1,112 @@
 \pagestyle{fancy}
 \chapter{Επίλυση}
 \section{Διαστασιολόγηση διαμήκων οπλισμών των δοκών του 1ου ορόφου}
+Για τις δοκούς με διατομή $0.3m\times0.6m$ εκτιμάται η επικάλυψη και το στατικό ύψος ως εξής.
+
+\[
+c_{nom} = 50 mm \rightarrow d_1 = c_{nom} + \phi_h + \phi_L/2 = 50 + 8 + 14/2 = 65 mm
+\]
+
+\noindent
+και
+
+\[
+d = 600 - 65 = 535 mm
+\]
+
+\subsection{Μέλος 78}
+\noindent
+\underline{Δεξιά παρειά κόμβου 7}:
+\[
+\left.
+   \begin{array}{ll}
+     G+\psi_2 Q + Ε & \rightarrow M_{7,8} = -60+130 = 70 \\
+     G+\psi_2 Q - Ε & \rightarrow M_{7,8} = -60-130 = -190 \\
+     1.35G + 1.5Q     & \rightarrow M_{7,8} = -102
+   \end{array}
+\right\} \Rightarrow M_{7,8,\pi} = -190,\; M_{7,8,\kappa} = 70
+\]
+
+\[
+M_{7,8,\pi} = 190 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{190}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.156
+\]
+
+\[
+\omega_{\pi} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.171
+\]
+
+\[
+M_{7,8,\kappa} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{70}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.057
+\]
+
+\[
+\omega_{\kappa} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.058
+\]
+
+\noindent
+\underline{Αριστερή παρειά κόμβου 8}:
+\[
+\left.
+   \begin{array}{ll}
+       G+\psi_2 Q + Ε & \rightarrow M_{8,7} = -100-123.5 = -223.5 \\
+       G+\psi_2 Q - Ε & \rightarrow M_{8,7} = -100+123.5 = 23.5 \\
+       1.35G + 1.5Q     & \rightarrow M_{8,7} = -170
+   \end{array}
+\right \} \Rightarrow M_{8,7,\pi} = -223.5,\; M_{8,7,\kappa} = 23.5
+\]
+\noindent
+\underline{Άνοιγμα}:
+
+\medskip
+\noindent
+Για φόρτιση \(1.35G + 1.5Q\) οι ροπές των στηρίξεων είναι \(M_{7,8} = -102\) και \(M_{8,7} = -170\). Προσεγγιστικά για το μέσο του ανοίγματος θα είναι.
+\[
+ql^2/12 = \left(M_{7,8} + M_{8,7}\right)/2 = \left(102 + 170\right)/2 = 136 \Rightarrow ql^2 = 1632
+\]
+
+\noindent
+και
+
+\[
+M_{7,8,mid} = ql^2/24 = 1632/24 = 68 KNm
+\]
+
+\subsection{Μέλος 89}
+\noindent
+\underline{Δεξιά παρειά κόμβου 8}:
+\[
+\left.
+   \begin{array}{ll}
+       G+\psi_2 Q + Ε & \rightarrow M_{8,9} = -100+123.5 = 23.5 \\
+       G+\psi_2 Q - Ε & \rightarrow M_{8,9} = -100-123.5 = -223.5 \\
+       1.35G + 1.5Q     & \rightarrow M_{8,9} = -170
+   \end{array}
+\right \} \Rightarrow M_{8,9,\pi} = -223.5,\; M_{8,9,\kappa} = 23.5
+\]
+\noindent
+\underline{Αριστερή παρειά κόμβου 9}:
+\[
+\left.
+   \begin{array}{ll}
+       G+\psi_2 Q + Ε & \rightarrow M_{9,8} = -60-130 = -190 \\
+       G+\psi_2 Q - Ε & \rightarrow M_{9,8} = -60+130 = 70 \\
+       1.35G + 1.5Q     & \rightarrow M_{9,8} = -102
+   \end{array}
+\right \} \Rightarrow M_{9,8,\pi} = -190,\; M_{9,8,\kappa} = 70
+\]
+\noindent
+\underline{Άνοιγμα}:
+
+\medskip
+\noindent
+Για φόρτιση \(1.35G + 1.5Q\) οι ροπές των στηρίξεων είναι \(M_{8,9} = -170\) και \(M_{9,8} = -102\). Προσεγγιστικά για το μέσο του ανοίγματος θα είναι.
+\[
+ql^2/12 = \left(M_{8,9} + M_{9,8}\right)/2 = \left(170 + 102\right)/2 = 136 \Rightarrow ql^2 = 1632
+\]
+
+\noindent
+και
+
+\[
+M_{8,9,mid} = ql^2/24 = 1632/24 = 68 KNm
+\]
