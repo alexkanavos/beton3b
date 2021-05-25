@@ -1,7 +1,8 @@
 \pagestyle{fancy}
 \chapter{Επίλυση}
 \section{Διαστασιολόγηση διαμήκων οπλισμών των δοκών του 1ου ορόφου}
-Για τις δοκούς με διατομή $0.3m\times0.6m$ εκτιμάται η επικάλυψη και το στατικό ύψος ως εξής.
+\noindent
+Για τις δοκούς με διατομή $0.3m\times0.6m$ υπολογίζεται η επικάλυψη και το στατικό ύψος ως εξής.
 
 \[
 c_{nom} = 50 mm \rightarrow d_1 = c_{nom} + \phi_h + \phi_L/2 = 50 + 8 + 14/2 = 65 mm
@@ -14,9 +15,48 @@ c_{nom} = 50 mm \rightarrow d_1 = c_{nom} + \phi_h + \phi_L/2 = 50 + 8 + 14/2 = 
 d = 600 - 65 = 535 mm
 \]
 
+\noindent
+Το συνεργαζόμενο πλάτος \(b_{eff}\) στις διατομές (περιοχές) των δοκών όπου συναντάται θλίψη στο άνω μέρος προκύπτουν ως εξής.
+
+\[
+b_{eff,7} = 0.5\cdot6/10 + 0.2\cdot3 = 0.9 > 0.2\cdot0.5\cdot6 = 0.6 \Rightarrow b_{eff,8} = 0.6m
+\]
+
+\[
+b_{eff,78,mid} = 0.7\cdot6/10 + 0.2\cdot3 = 1.02 > 0.2\cdot0.7\cdot6 = 0.84 \Rightarrow b_{eff,78,mid} = 0.84m
+\]
+
+\[
+b_{eff,89,mid} = 0.7\cdot6/10 + 0.2\cdot3 = 1.02 > 0.2\cdot0.7\cdot6 = 0.84 \Rightarrow b_{eff,78,mid} = 0.84m
+\]
+
+\[
+b_{eff,9} = 0.5\cdot6/10 + 0.2\cdot3 = 0.9 > 0.2\cdot0.5\cdot6 = 0.6 \Rightarrow b_{eff,9} = 0.6m
+\]
+
+\noindent
+Για τις δοκούς και για ΚΠΜ οι κατασκευαστικοί κανόνες που ορίζονται από τους Ευρωκώδικες 2 και 8 απαιτούν τα παρακάτω, με βάση τα οποία επιλέγονται οι τοποθετούμενοι οπλισμοί. Χάριν συντομίας, οι σχετικές συγκρίσεις με τα κατασκευαστικά ελάχιστα παραλείπονται, όμως διενεργούνται σε όλους τους υπολογισμούς και τους επηρεάζουν αναλόγως.
+
+\[
+\rho_{min} = \dfrac{A_{s,min}}{bd} = 0.5\dfrac{f_{ctm}}{f_{yk}} = 0.5\cdot \dfrac{2.56}{500} = 5.12\cdot 10^{-3}
+\]
+
+\[
+A_{s,min} = 308mm^2
+\]
+
+\[
+A_{s,min,bottom,support} = 0.5A_{s,top,support}
+\]
+
+\[
+A_{s,min,bottom,support} = 0.25A_{s,bottom,mid}
+\]
+
 \subsection{Μέλος 78}
 \noindent
 \underline{Δεξιά παρειά κόμβου 7}:
+
 \[
 \left.
    \begin{array}{ll}
@@ -24,27 +64,50 @@ d = 600 - 65 = 535 mm
      G+\psi_2 Q - Ε & \rightarrow M_{7,8} = -60-130 = -190 \\
      1.35G + 1.5Q     & \rightarrow M_{7,8} = -102
    \end{array}
-\right\} \Rightarrow M_{7,8,\pi} = -190,\; M_{7,8,\kappa} = 70
+\right\} \Rightarrow M_{7,8,top} = -190,\; M_{7,8,bottom} = 70
 \]
 
 \[
-M_{7,8,\pi} = 190 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{190}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.156
+M_{7,8,top} = -190 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{190}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.156
 \]
 
 \[
-\omega_{\pi} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.171
+\omega_{top} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.171
 \]
 
 \[
-M_{7,8,\kappa} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{70}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.057
+A_{s,top} = \omega_{top}b d \dfrac{f_{cd}}{f_{yd}} = 0.171\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.171\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 894mm^2
+\]
+
+\noindent
+Άρα τοποθετούνται:
+
+\[
+A_{\tau} = 3\Phi20 = 942mm^2
 \]
 
 \[
-\omega_{\kappa} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.058
+M_{7,8,bottom} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{ef} d^2 f_{cd}} = \dfrac{70}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.057
+\]
+
+\[
+\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.058
+\]
+
+\[
+A_{s,bottom} = \omega_{bottom}b d \dfrac{f_{cd}}{f_{yd}} = 0.058\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 303mm^2
+\]
+
+\noindent
+Άρα τοποθετούνται:
+
+\[
+A_{\tau} = 3\Phi16 = ............
 \]
 
 \noindent
 \underline{Αριστερή παρειά κόμβου 8}:
+
 \[
 \left.
    \begin{array}{ll}
@@ -52,28 +115,30 @@ M_{7,8,\kappa} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac
        G+\psi_2 Q - Ε & \rightarrow M_{8,7} = -100+123.5 = 23.5 \\
        1.35G + 1.5Q     & \rightarrow M_{8,7} = -170
    \end{array}
-\right \} \Rightarrow M_{8,7,\pi} = -223.5,\; M_{8,7,\kappa} = 23.5
+\right \} \Rightarrow M_{8,7,top} = -223.5,\; M_{8,7,bottom} = 23.5
 \]
+
 \noindent
 \underline{Άνοιγμα}:
 
-\medskip
+\bigskip
+
 \noindent
-Για φόρτιση \(1.35G + 1.5Q\) οι ροπές των στηρίξεων είναι \(M_{7,8} = -102\) και \(M_{8,7} = -170\). Προσεγγιστικά για το μέσο του ανοίγματος θα είναι.
+Για φόρτιση \(1.35G + 1.5Q\) από το άθροισμα των αξονικών του εισογείου προκύπτει το φορτίο, έστω $q (KN/m)$ που αναλαμβάνουν οι δοκοί του 1ου ορόφου και το ημιάθροισμα των ροπών των στηρίξεων κάθε δοκού είναι $(170+102)/2= 136KNm$.
+
 \[
-ql^2/12 = \left(M_{7,8} + M_{8,7}\right)/2 = \left(102 + 170\right)/2 = 136 \Rightarrow ql^2 = 1632
+q = (...........)/12 =  KN/m =  KN/m
 \]
 
-\noindent
-και
-
 \[
-M_{7,8,mid} = ql^2/24 = 1632/24 = 68 KNm
+M_{7,8,mid} = 136 - ql^2/8 =
 \]
 
 \subsection{Μέλος 89}
+
 \noindent
 \underline{Δεξιά παρειά κόμβου 8}:
+
 \[
 \left.
    \begin{array}{ll}
@@ -81,10 +146,12 @@ M_{7,8,mid} = ql^2/24 = 1632/24 = 68 KNm
        G+\psi_2 Q - Ε & \rightarrow M_{8,9} = -100-123.5 = -223.5 \\
        1.35G + 1.5Q     & \rightarrow M_{8,9} = -170
    \end{array}
-\right \} \Rightarrow M_{8,9,\pi} = -223.5,\; M_{8,9,\kappa} = 23.5
+\right \} \Rightarrow M_{8,9,top} = -223.5,\; M_{8,9,bottom} = 23.5
 \]
+
 \noindent
 \underline{Αριστερή παρειά κόμβου 9}:
+
 \[
 \left.
    \begin{array}{ll}
@@ -92,21 +159,41 @@ M_{7,8,mid} = ql^2/24 = 1632/24 = 68 KNm
        G+\psi_2 Q - Ε & \rightarrow M_{9,8} = -60+130 = 70 \\
        1.35G + 1.5Q     & \rightarrow M_{9,8} = -102
    \end{array}
-\right \} \Rightarrow M_{9,8,\pi} = -190,\; M_{9,8,\kappa} = 70
+\right \} \Rightarrow M_{9,8,top} = -190,\; M_{9,8,bottom} = 70
 \]
+
+\[
+M_{9,8,top} = -190 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{190}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.156
+\]
+
+\[
+\omega_{top} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.171
+\]
+
+\[
+A_{s,top} = \omega_{top}b d \dfrac{f_{cd}}{f_{yd}} = 0.171\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.171\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 894mm^2
+\]
+
+\[
+M_{9,8,bottom} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{70}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.057
+\]
+
+\[
+\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.058
+\]
+
+\[
+A_{s,bottom} = \omega_{bottom}b d \dfrac{f_{cd}}{f_{yd}} = 0.058\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 303mm^2
+\]
+
 \noindent
 \underline{Άνοιγμα}:
 
-\medskip
-\noindent
-Για φόρτιση \(1.35G + 1.5Q\) οι ροπές των στηρίξεων είναι \(M_{8,9} = -170\) και \(M_{9,8} = -102\). Προσεγγιστικά για το μέσο του ανοίγματος θα είναι.
-\[
-ql^2/12 = \left(M_{8,9} + M_{9,8}\right)/2 = \left(170 + 102\right)/2 = 136 \Rightarrow ql^2 = 1632
-\]
+\bigskip
 
 \noindent
-και
+Για φόρτιση \(1.35G + 1.5Q\)
 
 \[
-M_{8,9,mid} = ql^2/24 = 1632/24 = 68 KNm
+M_{8,9,mid} =
 \]
