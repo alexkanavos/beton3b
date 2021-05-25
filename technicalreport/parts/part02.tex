@@ -53,6 +53,17 @@ A_{s,min,bottom,support} = 0.5A_{s,top,support}
 A_{s,min,bottom,support} = 0.25A_{s,bottom,mid}
 \]
 
+\noindent
+Για φόρτιση \(1.35G + 1.5Q\) από το άθροισμα των αξονικών του 1ου ορόφου προκύπτει το φορτίο, έστω $q (KN/m)$ που αναλαμβάνουν οι δοκοί του 1ου ορόφου και το ημιάθροισμα των ροπών των στηρίξεων κάθε δοκού είναι $-(170+102)/2= -136KNm$.
+
+\[
+q = (510+ 1190 +510)/12 = 184 KN/m
+\]
+
+\[
+M_{7,8,mid} = M_{8,9,mid} = - 136 + ql^2/8 = -136 + 184\cdot6^2/8 = 692 KNm
+\]
+
 \subsection{Μέλος 78}
 \noindent
 \underline{Δεξιά παρειά κόμβου 7}:
@@ -102,7 +113,7 @@ A_{s,bottom} = \omega_{bottom}b d \dfrac{f_{cd}}{f_{yd}} = 0.058\cdot 0.3 \cdot 
 Άρα τοποθετούνται:
 
 \[
-A_{\tau} = 3\Phi16 = ............
+A_{\tau} = 3\Phi20 = 942mm^2
 \]
 
 \noindent
@@ -123,15 +134,23 @@ A_{\tau} = 3\Phi16 = ............
 
 \bigskip
 
-\noindent
-Για φόρτιση \(1.35G + 1.5Q\) από το άθροισμα των αξονικών του εισογείου προκύπτει το φορτίο, έστω $q (KN/m)$ που αναλαμβάνουν οι δοκοί του 1ου ορόφου και το ημιάθροισμα των ροπών των στηρίξεων κάθε δοκού είναι $(170+102)/2= 136KNm$.
-
 \[
-q = (...........)/12 =  KN/m =  KN/m
+M_{7,8,mid} = 692 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{692}{0.84\cdot0.535^2\cdot14.16\cdot10^3} = 0.203
 \]
 
 \[
-M_{7,8,mid} = 136 - ql^2/8 =
+\omega_{mid} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.231
+\]
+
+\[
+A_{s,mid} = \omega_{mid}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.231\cdot 0.84 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.231\cdot 0.84 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 3380 mm^2
+\]
+
+\noindent
+Άρα τοποθετούνται:
+
+\[
+A_{\tau} = 11\Phi20 = 3454 mm^2
 \]
 
 \subsection{Μέλος 89}
@@ -174,6 +193,13 @@ M_{9,8,top} = -190 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{
 A_{s,top} = \omega_{top}b d \dfrac{f_{cd}}{f_{yd}} = 0.171\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.171\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 894mm^2
 \]
 
+\noindent
+Άρα τοποθετούνται:
+
+\[
+A_{\tau} = 3\Phi20 = 942mm^2
+\]
+
 \[
 M_{9,8,bottom} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b d^2 f_{cd}} = \dfrac{70}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.057
 \]
@@ -187,13 +213,38 @@ A_{s,bottom} = \omega_{bottom}b d \dfrac{f_{cd}}{f_{yd}} = 0.058\cdot 0.3 \cdot 
 \]
 
 \noindent
+Άρα τοποθετούνται:
+
+\[
+A_{\tau} = 3\Phi20 = 942mm^2
+\]
+
+\noindent
 \underline{Άνοιγμα}:
 
 \bigskip
 
-\noindent
-Για φόρτιση \(1.35G + 1.5Q\)
+\[
+M_{8,9,mid} = 692 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{692}{0.84\cdot0.535^2\cdot14.16\cdot10^3} = 0.203
+\]
 
 \[
-M_{8,9,mid} =
+\omega_{mid} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.231
 \]
+
+\[
+A_{s,mid} = \omega_{mid}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.231\cdot 0.84 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.231\cdot 0.84 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 3380 mm^2
+\]
+
+\noindent
+Άρα τοποθετούνται:
+
+\[
+A_{\tau} = 11\Phi20 = 3454 mm^2
+\]
+
+Άρα τελικά οι διαμήκεις οπλισμοί των δοκών του 1ου ορόφου έχουν ως εξής.
+..............................\\
+............................
+
+\section{Διαστασιολόγηση κατακόρυφων οπλισμών των υποστυλωμάτων του 1ου ορόφου σύμφωνα με τον ικανοτικό σχεδιασμό σε κάμψη}
