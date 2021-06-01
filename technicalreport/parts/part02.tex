@@ -19,19 +19,23 @@ d = 600 - 65 = 535 mm
 Το συνεργαζόμενο πλάτος \(b_{eff}\) στις διατομές (περιοχές) των δοκών όπου συναντάται θλίψη στο άνω μέρος προκύπτουν ως εξής.
 
 \[
-b_{eff,7} = 0.5\cdot6/10 + 0.2\cdot3 = 0.9 > 0.2\cdot0.5\cdot6 = 0.6 \Rightarrow b_{eff,8} = 0.6m
+b_{eff,7} = 0.5\cdot6/10 + 0.2\cdot3 = 0.9 > 0.6 \Rightarrow b_{eff,8} = 0.6\cdot2+0.3 = 1.5m
 \]
 
 \[
-b_{eff,78,mid} = 0.7\cdot6/10 + 0.2\cdot3 = 1.02 > 0.2\cdot0.7\cdot6 = 0.84 \Rightarrow b_{eff,78,mid} = 0.84m
+b_{eff,78,mid} = 0.7\cdot6/10 + 0.2\cdot3 = 1.02 > 0.84 \Rightarrow b_{eff,78,mid} = 0.84\cdot2+0.3 = 1.98m
 \]
 
 \[
-b_{eff,89,mid} = 0.7\cdot6/10 + 0.2\cdot3 = 1.02 > 0.2\cdot0.7\cdot6 = 0.84 \Rightarrow b_{eff,78,mid} = 0.84m
+b_{eff,8} = 0.3\cdot6/10 + 0.2\cdot3 = 0.78 > 0.36 \Rightarrow b_{eff,8} = 0.36\cdot2+0.3 = 1.02m
 \]
 
 \[
-b_{eff,9} = 0.5\cdot6/10 + 0.2\cdot3 = 0.9 > 0.2\cdot0.5\cdot6 = 0.6 \Rightarrow b_{eff,9} = 0.6m
+b_{eff,89,mid} = 0.7\cdot6/10 + 0.2\cdot3 = 1.02 > 0.84 \Rightarrow b_{eff,78,mid} = 0.84\cdot2+0.3 = 1.98m
+\]
+
+\[
+b_{eff,9} = 0.5\cdot6/10 + 0.2\cdot3 = 0.9 > 0.6 \Rightarrow b_{eff,9} = 0.6\cdot2+0.3 = 1.5m
 \]
 
 \noindent
@@ -98,15 +102,15 @@ A_{\tau} = 3\Phi20 = 942mm^2
 \]
 
 \[
-M_{7,8,bottom} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{70}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.057
+M_{7,8,bottom} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{70}{1.5\cdot0.535^2\cdot14.16\cdot10^3} = 0.012
 \]
 
 \[
-\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.058
+\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.012
 \]
 
 \[
-A_{s,bottom} = \omega_{bottom}b d \dfrac{f_{cd}}{f_{yd}} = 0.058\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 303mm^2
+A_{s,bottom} = \omega_{bottom}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.012\cdot 1.5 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 303mm^2
 \]
 
 \noindent
@@ -149,15 +153,15 @@ A_{\tau} = 4\Phi20 = 1256mm^2
 \]
 
 \[
-M_{8,7,bottom} = 23.5 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{23.5}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.010
+M_{8,7,bottom} = 23.5 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{23.5}{1.02\cdot0.535^2\cdot14.16\cdot10^3} = 0.006
 \]
 
 \[
-\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.010
+\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.006
 \]
 
 \[
-A_{s,bottom} = \omega_{bottom}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.010\cdot 0.6 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 102mm^2
+A_{s,bottom} = \omega_{bottom}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.006\cdot 1.02 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 102mm^2
 \]
 
 \noindent
@@ -173,15 +177,15 @@ A_{\tau} = 2\Phi20 = 628mm^2
 \bigskip
 
 \[
-M_{7,8,mid} = 242 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{242}{0.84\cdot0.535^2\cdot14.16\cdot10^3} = 0.071
+M_{7,8,mid} = 242 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{242}{1.98\cdot0.535^2\cdot14.16\cdot10^3} = 0.030
 \]
 
 \[
-\omega_{mid} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.074
+\omega_{mid} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.031
 \]
 
 \[
-A_{s,mid} = \omega_{mid}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.074\cdot 0.84 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.074\cdot 0.84 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 1082 mm^2
+A_{s,mid} = \omega_{mid}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.031\cdot 1.98 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.031\cdot 1.98 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 1057 mm^2
 \]
 
 \noindent
@@ -226,15 +230,15 @@ A_{\tau} = 4\Phi20 = 1256mm^2
 \]
 
 \[
-M_{8,9,bottom} = 23.5 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{23.5}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.010
+M_{8,9,bottom} = 23.5 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{23.5}{1.02\cdot0.535^2\cdot14.16\cdot10^3} = 0.006
 \]
 
 \[
-\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.010
+\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.006
 \]
 
 \[
-A_{s,bottom} = \omega_{bottom}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.010\cdot 0.6 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 102mm^2
+A_{s,bottom} = \omega_{bottom}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.006\cdot 1.02 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 102mm^2
 \]
 
 \noindent
@@ -278,15 +282,15 @@ A_{\tau} = 3\Phi20 = 942mm^2
 \]
 
 \[
-M_{9,8,bottom} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{70}{0.3\cdot0.535^2\cdot14.16\cdot10^3} = 0.057
+M_{9,8,bottom} = 70 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{70}{1.5\cdot0.535^2\cdot14.16\cdot10^3} = 0.012
 \]
 
 \[
-\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.058
+\omega_{bottom} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.012
 \]
 
 \[
-A_{s,bottom} = \omega_{bottom}b d \dfrac{f_{cd}}{f_{yd}} = 0.058\cdot 0.3 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 303mm^2
+A_{s,bottom} = \omega_{bottom}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.012\cdot 1.5 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 303mm^2
 \]
 
 \noindent
@@ -302,15 +306,15 @@ A_{\tau} = 2\Phi20 = 628mm^2
 \bigskip
 
 \[
-M_{9,8,mid} = 242 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{242}{0.84\cdot0.535^2\cdot14.16\cdot10^3} = 0.071
+M_{9,8,mid} = 242 \rightarrow \mu_{sd} = \dfrac{M_{sd}}{b_{eff} d^2 f_{cd}} = \dfrac{242}{1.98\cdot0.535^2\cdot14.16\cdot10^3} = 0.030
 \]
 
 \[
-\omega_{mid} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.074
+\omega_{mid} = 0.973\left( 1 - \sqrt{1 - \dfrac{2\mu_{sd}}{0.973}} \right) = 0.031
 \]
 
 \[
-A_{s,mid} = \omega_{mid}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.074\cdot 0.84 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.074\cdot 0.84 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 1082 mm^2
+A_{s,mid} = \omega_{mid}b_{eff} d \dfrac{f_{cd}}{f_{yd}} = 0.031\cdot 1.98 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 0.031\cdot 1.98 \cdot 0.535 \cdot \dfrac{14.16}{434.78} = 1057 mm^2
 \]
 
 \noindent
@@ -324,6 +328,8 @@ A_{\tau} = 4\Phi20 = 1256 mm^2
 
 \noindent\textbf{\textcolor{mygreen}{Άρα τελικά οι διαµήκεις οπλισµοί των δοκών του 1ου ορόφου, όπως προέκυψαν από τους άνωθεν υπολογισμούς, φαίνονται συγκεντρωτικά στον επόμενο πίνακα.}}
 
+\bigskip
+
 \begin{table}[h]
 \centering\footnotesize
 \begin{tabular}{| c || c | c | c | c | c |}
@@ -331,9 +337,9 @@ A_{\tau} = 4\Phi20 = 1256 mm^2
 Θέση & Κόμβος 7 & Άνοιγμα 78 & Κόμβος 8 & Άνοιγμα 89 & Κόμβος 9 \\
 \hline
 \hline
-Πάνω & $3\Phi20$ & $-$ & $4\Phi20$ & $-$ & $3\Phi20$ \\
-\hline
 Κάτω & $2\Phi20$ & $4\Phi20$ & $2\Phi20$ & $4\Phi20$ & $2\Phi20$ \\
+\hline
+Πάνω & $3\Phi20$ & $-$ & $4\Phi20$ & $-$ & $3\Phi20$ \\
 \hline
 \end{tabular}
 \caption{Διαμήκεις οπλισμοί δοκών 1ου ορόφου}
@@ -341,3 +347,201 @@ A_{\tau} = 4\Phi20 = 1256 mm^2
 \end{table}
 
 \section{Διαστασιολόγηση κατακόρυφων οπλισμών των υποστυλωμάτων του 1ου ορόφου σύμφωνα με τον ικανοτικό σχεδιασμό σε κάμψη}
+
+\subsection{Υπολογισμός ροπών αντοχής δοκών στις στηρίξεις}
+\noindent
+Οι οπλισμοί ($A_{s1}$, $A_{s2}$) των δοκών έχουν προκύψει από τη διαστασιολόγησή τους που έγινε στην προηγούμενη ενότητα και χρησιμοποιούνται παρακάτω για τον υπολογισμό των ροπών αντοχής.
+
+\noindent
+Για την εύρεση της ροπής αντοχής των δοκών στις στηρίξεις όταν εφελκύεται το κάτω πέλμα χρησιμοποιούνται οι ακόλουθες εξισώσεις.
+
+\[
+A_c = bh - A_{s1} \rightarrow \omega_1 = \dfrac{A_{s1}}{A_c}\dfrac{f_{yd}}{f_{cd}}
+\]
+
+\[
+M_{Rb} = A_{s1}f_{yd}(d-d_2)
+\]
+
+\noindent
+Για την εύρεση της ροπής αντοχής των δοκών στις στηρίξεις όταν εφελκύεται το πάνω πέλμα χρησιμοποιούνται οι ακόλουθες εξισώσεις.
+
+\[
+A_c = (0.15b_{eff} + 0.45b ) - (A_{s1}+A_{s2}) \rightarrow \omega_1 = \dfrac{A_{s1}}{A_c}\dfrac{f_{yd}}{f_{cd}} \rightarrow \omega_2 = \dfrac{A_{s2}}{A_c}\dfrac{f_{yd}}{f_{cd}}
+\]
+
+\[
+M_{Rb} = A_{s2}f_{yd}(d-d_2)+(\omega_1 - \omega_2)(1-0.514(\omega_1 - \omega_2))b_{eff}d^2f_{cd}
+\]
+
+\bigskip
+\noindent
+Τα αποτελέσματα των υπολογισμών των ροπών αντοχής (σε $KNm$) στις στηρίξεις των δοκών φαίνονται στον επόμενο πίνακα (Πίν. \ref{tab:mrdbeam}).
+
+\begin{table}[h]
+\centering\footnotesize
+\begin{tabular}{| c || c | c | c |}
+\hline
+$M_{Rb}$ & Κόμβος 7 & Κόμβος 8 & Κόμβος 9 \\
+\hline
+\hline
+Εφελκυσμός κάτω & $128.3$ & $128.3$ & $128.3$ \\
+\hline
+Εφελκυσμός πάνω & $289.6$ & $397.3$ & $289.6$ \\
+\hline
+\end{tabular}
+\caption{Ροπές αντοχής δοκών 1ου ορόφου}
+\label{tab:mrdbeam}
+\end{table}
+
+\bigskip
+
+\subsection{Ικανοτικός σχεδιασμός υποστυλωμάτων}
+\noindent
+\underline{Κόμβος 7}
+
+\bigskip
+
+\noindent
+Για φόρτιση $G+\psi_2Q+E$ έχουμε:
+
+\[
+M_{CD}=\gamma_{Rd}M_{Rb} = 1.3\cdot128.3\cdot\dfrac{37}{59.5} =103.7 KNm 
+\]
+
+\[
+N_d = \dfrac{N_{above}+N_{below}}{2}=\dfrac{240+300}{2}=270 KN
+\]
+
+\[
+\mu_d = \dfrac{M_d}{bh^2f_{cd}}=\dfrac{103.7}{0.35\cdot0.35^2\cdot14.16\cdot1000}=0.171
+\]
+
+\[
+\nu_d = \dfrac{N_d}{bhf_{cd}}=\dfrac{270}{0.35\cdot0.35\cdot14.16\cdot1000}=0.155
+\]
+
+\[
+d_1/h = 0.185 \rightarrow \omega_{tot}= 0.35
+\]
+
+\noindent
+Για φόρτιση $G+\psi_2Q-E$ έχουμε:
+
+\[
+M_{CD}=\gamma_{Rd}M_{Rb} = 1.3\cdot289.6\cdot\dfrac{93}{187.5} =186.7 KNm 
+\]
+
+\[
+N_d = \dfrac{N_{above}+N_{below}}{2}=\dfrac{360+540}{2}=450 KN
+\]
+
+\[
+\mu_d = \dfrac{M_d}{bh^2f_{cd}}=\dfrac{186.7}{0.35\cdot0.35^2\cdot14.16\cdot1000}=0.307
+\]
+
+\[
+\nu_d = \dfrac{N_d}{bhf_{cd}}=\dfrac{450}{0.35\cdot0.35\cdot14.16\cdot1000}=0.259
+\]
+
+\[
+d_1/h = 0.185 \rightarrow \omega_{tot}= 0.62
+\]
+
+\noindent
+Άρα για τη διαστασιολόγηση έχουμε:
+
+\[
+A_{s,tot}=\omega_{tot} b h \dfrac{f_{cd}}{f_{yd}} = 2473 mm^2
+\]
+
+\[
+A_{s,min}=0.01b h = 1225 mm^2 \leq A_{s,tot}
+\]
+
+\noindent
+Τοποθετούνται $8\Phi20 = 2512 mm^2$
+
+\bigskip
+
+\noindent
+\underline{Κόμβος 8}
+
+\bigskip
+
+\noindent
+Για φόρτιση $G+\psi_2Q+E$ έχουμε:
+
+\[
+M_{CD}=\gamma_{Rd}M_{Rb} = 1.3\cdot(397.3+128.3)\cdot\dfrac{99}{209} =323.7 KNm 
+\]
+
+\[
+N_d = \dfrac{N_{above}+N_{below}}{2}=\dfrac{700+1050}{2}=875 KN
+\]
+
+\[
+\mu_d = \dfrac{M_d}{bh^2f_{cd}}=\dfrac{323.7}{0.40\cdot0.40^2\cdot14.16\cdot1000}=0.357
+\]
+
+\[
+\nu_d = \dfrac{N_d}{bhf_{cd}}=\dfrac{875}{0.40\cdot0.40\cdot14.16\cdot1000}=0.386
+\]
+
+\[
+d_1/h = 0.185 \rightarrow \omega_{tot}= 0.70
+\]
+
+\noindent
+Για φόρτιση $G+\psi_2Q-E$ έχουμε:
+
+\[
+M_{CD}=\gamma_{Rd}M_{Rb} = 1.3\cdot(397.3+128.3)\cdot\dfrac{99}{209} =323.7 KNm 
+\]
+
+\[
+N_d = \dfrac{N_{above}+N_{below}}{2}=\dfrac{700+1050}{2}=875 KN
+\]
+
+\[
+\mu_d = \dfrac{M_d}{bh^2f_{cd}}=\dfrac{323.7}{0.40\cdot0.40^2\cdot14.16\cdot1000}=0.357
+\]
+
+\[
+\nu_d = \dfrac{N_d}{bhf_{cd}}=\dfrac{875}{0.40\cdot0.40\cdot14.16\cdot1000}=0.386
+\]
+
+\[
+d_1/h = 0.185 \rightarrow \omega_{tot}= 0.70
+\]
+
+\noindent
+Άρα για τη διαστασιολόγηση έχουμε:
+
+\[
+A_{s,tot}=\omega_{tot} b h \dfrac{f_{cd}}{f_{yd}} = 3647 mm^2
+\]
+
+\[
+A_{s,min}=0.01b h = 1600 mm^2 \leq A_{s,tot}
+\]
+
+\noindent
+Τοποθετούνται $12\Phi20 = 3768 mm^2$
+
+\bigskip
+
+\noindent
+\underline{Κόμβος 9}
+
+\bigskip
+
+\noindent
+Λόγω συμμετρίας, προκύπτουν ακριβώς οι ίδιες απαιτήσεις οπλισμού με τον κόμβο 7.
+
+\bigskip
+
+\noindent\textbf{\textcolor{mygreen}{Άρα στα ακραία υποστυλώματα τοποθετούνται 8Φ20 και στο μεσαίο 12Φ20.}}
+
+\section{Υπολογισμός τεμνουσών σχεδιασμού των δοκών και υποστυλωμάτων του 1ου ορόφου σύμφωνα με τον ικανοτικό σχεδιασμό σε διάτμηση}
+.................
